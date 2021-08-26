@@ -1,0 +1,8 @@
+import os
+from docx2pdf import convert
+path="C:/Users/owner/Desktop/test"
+li=os.listdir(path)
+#print(li)
+for file in li:
+    if file.endswith(".docx"):
+        convert("C:/Users/owner/Desktop/test","C:/Users/owner/Desktop/folder1")
